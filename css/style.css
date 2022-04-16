@@ -1,0 +1,788 @@
+:root
+{
+    --mygreen: #05E096;
+    --pcolor : #CCCFD2;
+    --pcolor2 : #B2B6B9;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+}
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover
+{
+    text-decoration: none;
+    color: var(--pcolor);
+}
+
+/******************************************************/
+nav
+{
+    background-color: #1C262F ;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+nav h3
+{
+    display: flex;
+    justify-content: space-between;
+}
+nav h3 i
+{
+    color: #999DA1;
+    cursor: pointer;
+}
+
+nav .nav-ul
+{
+    background-color: #1C262F;
+    position: absolute;
+    top: 61px;
+    width: 100% ;
+    left: 0;
+    height: 100vh; 
+    padding-left: 35px;
+    font-size: 17px;
+    padding-top: 20px;
+    display: none;
+}
+
+    nav ul li a,
+    nav ul li span
+    {
+        color: var(--pcolor);
+        font-size: 20px;
+    }
+    nav ul li a:hover,
+    nav ul li span:hover
+    {
+        color: var(--mygreen);
+    }
+    nav .nav-ul>li
+    {
+        margin-bottom:20px ;
+    }
+    nav .nav-social i
+    {
+        color: var(--mygreen);
+        margin-right: 10px;
+    }
+    nav .dropspan
+    {
+        position: relative;
+    }
+
+
+
+    
+    
+/*****************************************************/
+
+header
+{
+    background-image:url('../images/home.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 62px;
+}
+header .header-content
+{
+    margin-top: 100px;
+}
+header .header-content h2
+{
+    font-weight: 600;
+}
+header .header-content h2 span
+{
+    color: var(--mygreen);
+}
+header .header-content p:first-of-type
+{
+    color: var(--pcolor);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+header .header-content p:nth-of-type(2) i,
+header .header-content p:nth-of-type(3) i
+{
+    color: var(--mygreen);
+    font-size: 25px;
+    margin-right: 10px;
+}
+header .header-content button
+{
+    border: 2px solid var(--mygreen);
+    outline: none;
+    background-color: transparent;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 0px var(--mygreen);
+    transition: box-shadow .5s;
+    margin-top: 25px;
+}
+header .header-content button:hover
+{
+    box-shadow: none;
+}
+/*****************************************************************/
+
+.sec1 figure:first-of-type,
+.sec1 figure:nth-of-type(2),
+.sec1 figure:last-of-type
+{
+    background-color: #1C262F;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+.sec1 figure:first-of-type i,
+.sec1 figure:nth-of-type(2) i,
+.sec1 figure:last-of-type i
+{
+    color: var(--mygreen);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.sec1 figure:first-of-type p,
+.sec1 figure:nth-of-type(2) p
+{
+    color: var(--pcolor);
+}
+
+.sec1 figure:nth-of-type(2)
+{
+    background-color: #212D37;
+}
+
+.sec1 figure:last-of-type
+{
+    background-color: #fff;
+}
+.sec1 figure:last-of-type h3
+{
+    color: #000;
+}
+.sec1 figure:last-of-type p
+{
+    color: #797C7E;
+}
+/*****************************************************************/
+.sec2
+{
+    background-color:#212D37 ;
+    padding: 70px 0;
+    overflow: hidden;
+}
+.sec2 aside h2
+{
+    line-height: .9;
+}
+.sec2 aside p
+{
+    color: var(--pcolor);
+    padding-top: 15px;
+}
+.sec2 aside button
+{
+    border: 2px solid var(--mygreen);
+    outline: none;
+    background-color: transparent;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 0px var(--mygreen);
+    transition: box-shadow .5s;
+    margin-top: 25px;
+}
+.sec2 aside button:hover
+{
+    box-shadow: none;
+}
+.sec2 figure
+{
+    margin-top: 50px;
+}
+.sec2 figure img
+{
+    width: 100%;
+
+}
+/*****************************************************************/
+
+.sec3
+{
+    background-color: #1C262F;
+    padding: 50px 0;
+    text-align: center;
+}
+.sec3 div>p,
+.sec4 div>p
+{
+    color: var(--pcolor2);
+    margin-top: 20px;
+}
+.sec3 .services-fig,
+.sec4 .sec4-figures 
+{
+    margin-top: 50px;
+}
+.sec3 .services-fig figure
+{
+    text-align: left;
+    border: 3px solid #fff;
+    padding: 30px 20px;
+}
+.sec3 .services-fig figure:hover
+{
+    border: 3px solid var(--mygreen);
+    box-shadow: 5px 5px 0px var(--mygreen);
+    transform:scale(1.01) ;
+
+}
+.sec3 .services-fig figure i
+{
+    color: var(--mygreen);
+    font-size: 35px;
+}
+.sec3 .services-fig figure h5
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+.sec3 .services-fig figure p
+{
+    color: var(--pcolor2);
+}
+
+/****************************************************/
+.sec4
+{
+    background-color: #212D37;
+    padding: 50px 0;
+    text-align: center;
+}
+.sec4 .sec4-figures figure
+{
+    border: 3px solid #fff;
+    padding: 30px 20px;
+    text-align: left;
+}
+.sec4 .sec4-figures figure p
+{
+    margin: 30px 0;
+}
+.sec4 .sec4-figures figure p i
+{
+    color: var(--mygreen);
+    margin-right: 10px;
+}
+.sec4 .sec4-figures figure h4
+{
+    margin: 25px 0;
+}
+.sec4 .sec4-figures figure button
+{
+    border: 2px solid var(--mygreen);
+    outline: none;
+    background-color: transparent;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 0px var(--mygreen);
+    transition: box-shadow .5s;
+    margin-top: 25px;
+}
+.sec4 .sec4-figures figure button:hover
+{
+    box-shadow: none;
+}
+/*****************************************************************/
+.sec5
+{
+    background-color: #1C262F;
+    padding: 70px 0;
+    overflow: hidden;
+}
+.sec5 figure img
+{
+    width: 100%;
+}
+.sec5 aside
+{
+    text-align: center;
+    margin-top: 50px;
+    overflow: hidden;
+
+}
+.sec5 aside>h4
+{
+    margin: 15px 0;
+}
+.sec5 aside>p
+{
+    color: var(--pcolor2);
+}
+.sec5 aside .sec5-aside-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+}
+.sec5 aside .sec5-aside-content div
+{
+    width: 49%;
+    margin-top: 30px;
+
+}
+.sec5 aside .sec5-aside-content div i
+{
+    color: var(--mygreen);
+    font-size: 30px;
+}
+.sec5 aside .sec5-aside-content div h4
+{
+    margin: 10px 0;
+}
+/*****************************************************************/
+
+.sec6
+{
+    background-color: #212D37;
+    padding: 100px 0;
+    text-align: center;
+    overflow: hidden;
+}
+.sec6 aside p
+{
+    color: var(--pcolor2);
+}
+.sec6 form div
+{
+    display: flex;
+}
+.sec6 form input[type='text']
+{
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 2px;
+    width: 70%;
+    margin-right: 0;
+}
+.sec6 form input[type='submit']
+{
+    margin-left: 0;
+    width: 24%;
+    border: 3px solid green;
+    outline: none;
+    background-color: transparent;
+    padding: 15px 20px;
+}
+.sec6 form input[type='submit']:hover
+{
+    background: linear-gradient(to right, rgb(20, 125, 20) , #05E096);    
+}
+/********************************************************************************/
+
+.sec7 
+{
+    background-color: #1C262F;
+    padding: 100px 0;
+    text-align: center;
+    overflow: hidden;
+}
+.sec7 aside h3
+{
+    margin: 15px 0;
+}
+.sec7 aside p
+{
+    color: var(--pcolor2);
+}
+.sec7 form input:not( .sec7 form input[type='submit'] ),
+.sec7 textarea
+{
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding: 15px 10px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    color: #000;
+}
+.sec7 textarea
+{
+    height: 150px;
+}
+.sec7 form input[type='submit']
+{
+    border: 2px solid var(--mygreen);
+    outline: none;
+    background-color: transparent;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 0px var(--mygreen);
+    transition: box-shadow .5s;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.sec7 form input[type='submit']:hover
+{
+    box-shadow: none;
+}
+.sec7 figure img
+{
+    width: 100%;
+    display: none;
+}
+
+/********************************************************************************/
+.sec8
+{
+    background-color: #212D37;
+    padding: 70px 0;
+}
+.sec8 figure
+{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.sec8 figure div:first-of-type i
+{
+    font-size: 45px;
+    color: var(--mygreen);
+    margin-right: 20px;
+}
+.sec8 figure div:last-of-type h5
+{
+    font-weight: 400;
+    
+}
+/***************************************************************/
+.sec9
+{
+    background-color: #1C262F;
+    padding: 70px 0;
+}
+.sec9 figure
+{
+    margin-top: 70px;
+}
+.sec9 figure:first-of-type p,
+.sec9 figure:nth-of-type(4) p
+{
+    color: var(--pcolor2);
+    margin: 20px 0;
+}
+.sec9 figure:first-of-type i
+{
+    font-size: 30px;
+    margin-right: 15px;
+}
+.sec9 figure:nth-of-type(2) h4,
+.sec9 figure:nth-of-type(3) h4,
+.sec9 figure:nth-of-type(4) h4
+{
+    margin-bottom: 20px;
+} 
+.sec9 figure:nth-of-type(2) i,
+.sec9 figure:nth-of-type(3) i
+{
+    margin-right: 10px;
+}
+.sec9 figure:nth-of-type(2) a:hover,
+.sec9 figure:first-of-type i:hover,
+.sec9 figure:nth-of-type(3) a:hover
+{
+    color: var(--mygreen);
+}
+.sec9 figure:last-of-type form div
+{
+    display: flex;
+}
+.sec9 figure:last-of-type form div input[type='text']
+{
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 2px;
+    width: 70%;
+    margin-right: 0;
+}
+.sec9 figure:last-of-type form div input[type='submit']
+{
+    margin-left: 0;
+    width: 24%;
+    border: 3px solid green;
+    outline: none;
+    background-color: transparent;
+    padding: 10px 50px;
+}
+.sec9 figure:last-of-type form div span:hover input[type='submit']
+{
+    background: linear-gradient(to right, rgb(20, 125, 20) , #05E096);    
+}
+.sec9 figure:last-of-type form div span
+{
+    position: relative;
+    text-align: center;
+}
+.sec9 figure:last-of-type form div span i
+{
+    position: absolute;
+    bottom: 19%;
+    left: 36%;
+    font-size: 31px;
+}
+/*****************************************************************/
+
+footer
+{
+    background-color: #000;
+    padding: 20px 0;
+}
+footer .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer figure i
+{
+    font-size: 30px;
+    margin-right: 15px;
+}
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+
+@media (min-width: 576px) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header .header-content
+    {
+        width: 80%;
+    }
+    .sec3 .services-fig
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .sec3 .services-fig figure
+    {
+        width: 49%;
+    }
+    .sec8 .container
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .sec8 figure
+    {
+        width: 49%;
+    }
+    .sec9 .container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .sec9 figure
+    {
+        width: 49%;
+    }
+
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    header .header-content
+    {
+        width: 60%;
+    }
+    header .header-content h2
+    {
+        font-size: 55px;
+    }
+
+    nav h3 .fa-bars
+    {
+        display: none;
+    }
+    nav
+    {
+        background-color: #1C262F;
+    }
+
+    nav .nav-ul
+    {
+        display:inline-block; 
+        margin: 0;
+        padding: 0;
+        padding-top: 9px;
+        font-size: 17px;
+        position: static;
+        top: 0;
+        width: 475px;
+        left: 0;
+        height: 0; 
+        font-size: 17px;
+        transition: all .5s;
+    }
+    
+    nav ul li a,
+    nav ul li span
+    {
+        color: var(--pcolor);
+    }
+    nav ul li a:hover,
+    nav ul li span:hover
+    {
+        color: var(--mygreen);
+    }
+    nav .nav-ul>li
+    {
+        display: inline-block !important;
+        margin-right:15px ;
+    }
+    nav .nav-social i
+    {
+        color: var(--mygreen);
+        margin-right: 10px;
+    }
+    nav .dropspan
+    {
+        position: relative;
+    }
+    .sec1
+    {
+        display: flex;
+    }
+    .sec2 div
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sec2 aside
+    {
+        width:60%
+    }
+    .sec2 figure
+    {
+        width:40%;
+        margin-top: 0;
+    }
+    .sec3 .services-fig figure
+    {
+        width: 32%;
+    }
+    .sec4 .sec4-figures
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec4 .sec4-figures figure
+    {
+        width: 32%;
+    }
+    .sec5>div
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec5 aside
+    {
+        margin-top: 0;
+        width: 49%;
+    }
+    .sec5 figure
+    {
+        width: 49%;
+    }
+    .sec6 .container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .sec6 aside
+    {
+        width: 49%;
+    }
+    .sec6 form
+    {
+        width: 49%;
+    }
+    .sec7 .container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sec7 aside,
+    .sec7 figure
+    {
+        width: 49%;
+    }
+    .sec7 figure img
+    {
+        width: 100%;
+        display: block;
+    }
+    .sec7 form div:first-of-type
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec9 figure
+    {
+        width: 24%;
+    }
+    
+   
+
+
+
+    
+
+
+    
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    header .header-content
+    {
+        width: 60%;
+    }
+    .sec8 figure
+    {
+        width: 24%;
+    }
+    .sec8 figure
+    {
+        margin-top: 0;
+    }
+
+    
+}
